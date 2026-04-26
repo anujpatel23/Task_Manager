@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-header text-center bg-primary text-white">
+                        <h3>Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
+                        <hr>
+                        <div class="text-center">
+                            <span>Don't have an account? </span>
+                            <a href="#" id="showSignup">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signup Card (Hidden by default) -->
+                <div class="card shadow mt-3" id="signupCard" style="display: none;">
+                    <div class="card-header text-center bg-success text-white">
+                        <h3>Sign Up</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="signupForm">
+                            <div class="form-group">
+                                <label for="newUsername">Username</label>
+                                <input type="text" class="form-control" id="newUsername" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="newPassword">Password</label>
+                                <input type="password" class="form-control" id="newPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Register</button>
+                        </form>
+                        <hr>
+                        <div class="text-center">
+                            <a href="#" id="showLogin">Back to Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
